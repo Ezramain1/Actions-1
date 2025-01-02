@@ -3,7 +3,7 @@ name: generate ascii
 on: push
 
 jobs:
-    first_jib:
+    second_job:
         runs-on: ubuntu-latest
         steps:
             - name: my checkout who supposed to work
