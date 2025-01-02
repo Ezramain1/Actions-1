@@ -6,7 +6,7 @@ jobs:
     first_jib:
         runs-on: ubuntu-latest
         steps:
-            - name: my checkout
+            - name: my checkout who supposed to work
               uses: actions/checkout@v4
             
             - name: welcome messsage
