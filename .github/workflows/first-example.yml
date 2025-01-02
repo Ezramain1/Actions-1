@@ -1,0 +1,16 @@
+name: my first action
+
+on: push
+
+jobs:
+    first_jib:
+        runs-on: ubuntu-latest
+        steps:
+            - name: welcome messsage
+              run: echo "hello Mr. Ezra"
+
+            - name: list files
+              run: ls
+
+            - name: Read file
+              run: cat README.md  
