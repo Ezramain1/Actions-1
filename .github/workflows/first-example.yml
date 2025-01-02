@@ -6,6 +6,9 @@ jobs:
     first_jib:
         runs-on: ubuntu-latest
         steps:
+            - name: my checkout
+              uses: actions/checkout@v4
+            
             - name: welcome messsage
               run: echo "hello Mr. Ezra"
 
