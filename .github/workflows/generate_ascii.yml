@@ -8,18 +8,10 @@ jobs:
         steps:
             - name: my checkout who supposed to work
               uses: actions/checkout@v4
-            
-            - name: insatll cowsay CMD
-              run: sudo apt-get install cowsay -y
-            
-            - name: Execute cowsay CMd
-              run: cowsay -f daemon " im a daemon ... RAWR" >> daemon.txt
-
-            - name: tets file exist
-              run: grep -i "daemon" daemon.txt
-
-            - name: Read file
-              run: cat daemon.txt
               
             - name: list repo file
               run: ls -ltra
+
+            - name: run shell script
+              run: ./ascii_script.sh
+              
