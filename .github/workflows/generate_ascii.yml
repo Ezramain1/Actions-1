@@ -13,12 +13,12 @@ jobs:
               run: sudo apt-get install cowsay -y
             
             - name: Execute cowsay CMd
-              run: cowsay -f tiger " im hungryy ... RAWR" >> tiger.txt
+              run: cowsay -f daemon " im hungryy ... RAWR" >> daemon.txt
             - name: tets file exist
-              run: grep -i "tiger" tiger.txt
+              run: grep -i "daemon" daemon.txt
 
             - name: Read file
-              run: cat tiger.txt
+              run: cat daemon.txt
               
             - name: list repo file
               run: ls -ltra
